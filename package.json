@@ -1,0 +1,33 @@
+{
+  "name": "indexedb-drizzle",
+  "version": "0.0.1",
+  "description": "IndexedDB runtime + schema DSL inspired by Drizzle ORM",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "indexeddb",
+    "drizzle",
+    "orm",
+    "schema"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.8.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
