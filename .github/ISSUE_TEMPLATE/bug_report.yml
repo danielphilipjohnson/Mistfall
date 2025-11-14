@@ -1,0 +1,37 @@
+name: Bug Report
+description: Report a bug or incorrect fix behaviour
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is the problem?
+      placeholder: Explain the issue clearly
+    validations:
+      required: true
+
+  - type: textarea
+    id: input
+    attributes:
+      label: Original code
+      description: Code before autofix
+      render: text
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected vs actual output
+      render: text
+
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      placeholder: e.g. 0.0.6
+
+  - type: input
+    id: eslint
+    attributes:
+      label: ESLint version
+      placeholder: e.g. 8.57.0

@@ -1,0 +1,74 @@
+---
+title: Mistfall Documentation
+description: Design, build, and ship IndexedDB-first features with Mistfall’s schema DSL, typed runtime, and integrations.
+template: splash
+hero:
+  tagline: Launch production-grade IndexedDB features with a Drizzle-style schema DSL, typed runtime, and live demos.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Read the overview
+      link: /overview/
+      icon: right-arrow
+    - text: Jump into the demos
+      link: /demos/schema-dsl/
+      icon: add-document
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Why Mistfall
+- **Structured schemas, zero guesswork.** Describe tables, constraints, and indexes with the DSL and let TypeScript enforce them across your app.
+- **Operational clarity.** Typed CRUD helpers, predicates, and transactions mirror relational ergonomics without IndexedDB boilerplate.
+- **Adapters for every surface.** Auto-switch between IndexedDB in browsers and memory in SSR/tests so features stay portable.
+- **Docs that mirror code.** Every page references working demos (Todo + Ecommerce) so you can copy-paste production patterns.
+
+## Pick Your Path
+
+<CardGrid stagger>
+  <Card title="Quickstart" icon="rocket" href="/quickstart/">
+    Copy this workflow from install → schema → island in under five minutes.
+  </Card>
+  <Card title="Wire it into Astro" icon="setting" href="/integrations/astro/">
+    Follow the integration checklist for client islands, SSR fallbacks, and adapters.
+  </Card>
+  <Card title="Browse the API" icon="document" href="/api-reference/">
+    Look up every builder, runtime helper, predicate, and option in one place.
+  </Card>
+  <Card title="Understand the stack" icon="open-book" href="/overview/">
+    Review goals, architecture layers, adapters, and example entry points.
+  </Card>
+</CardGrid>
+
+## Featured Demos
+- [Schema DSL](/demos/schema-dsl/) – see how tables, indexes, and constraints come together.
+- [Runtime CRUD](/demos/runtime-crud/) – inspect inserts, updates, deletes, and predicate-driven selects.
+- [Transactions](/demos/transactions/) – run multi-store workflows like todo reassignment and checkout.
+- [Adapters](/demos/adapters/) – compare IndexedDB vs memory modes and choose per surface.
+- [Todo](/todo-demo/) & [Ecommerce](/ecommerce-demo/) – full-stack demos with pagination, seeding, and UI wiring.
+
+## Tutorials to Follow
+
+<CardGrid>
+  <Card title="Full build" icon="pencil" href="/tutorials/full-guide/">
+    Build the entire todo dashboard step-by-step, from schema to UI.
+  </Card>
+  <Card title="Tables & columns" icon="add-document" href="/tutorials/tables-and-columns/">
+    Deep dive into column builders, modifiers, and indexes.
+  </Card>
+  <Card title="Querying" icon="open-book" href="/tutorials/querying/">
+    Learn every filtering, ordering, and pagination option.
+  </Card>
+  <Card title="Migrations" icon="setting" href="/foundations-migrations/">
+    Upgrade schemas safely with versioned stores and automatic metadata.
+  </Card>
+</CardGrid>
+
+## Build with confidence
+1. Skim the [Product Overview](/overview/) for architecture and goals.
+2. Complete the [Quickstart](/quickstart/) to wire Mistfall into your Astro project.
+3. Dive into [Foundations](/working-with-schema/) for schemas, connections, queries, and migrations.
+4. Reference the [Integrations → Astro guide](/integrations/astro/) and demos as you expand.
+
+Mistfall keeps IndexedDB ergonomic from prototype to production—use these docs as your playbook.

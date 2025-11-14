@@ -1,0 +1,57 @@
+name: Canary Release
+
+on:
+  push:
+    branches:
+      - "canary/**"
+
+permissions:
+  id-token: write
+  contents: read
+  packages: write
+
+jobs:
+  canary:
+    name: Publish Canary Version
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+          always-auth: true
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Generate Canary Version
+        id: version
+        run: |
+          BASE_VERSION=$(node -p "require('./package.json').version")
+          SHORT_SHA=$(echo $GITHUB_SHA | cut -c1-7)
+          BUILD_NUM=${GITHUB_RUN_NUMBER}
+
+          CANARY_VERSION="${BASE_VERSION}-canary.${BUILD_NUM}.${SHORT_SHA}"
+          
+          echo "version=$CANARY_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Update package.json (temp)
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          npm pkg set version="$VERSION"
+
+      - name: Publish Canary to npm
+        run: |
+          echo "Publishing version: ${{ steps.version.outputs.version }}"
+          npm publish --tag canary --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Restore original version (undo temp change)
+        run: |
+          git checkout -- package.json package-lock.json || true
