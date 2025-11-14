@@ -1,0 +1,56 @@
+name: Alpha/Beta Pre-Release
+
+on:
+  push:
+    branches:
+      - "alpha/**"
+      - "beta/**"
+
+permissions:
+  contents: write
+  id-token: write
+  packages: write
+
+jobs:
+  prerelease:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+          always-auth: true
+
+      - run: npm ci
+
+      - name: Detect preid
+        id: tag
+        run: |
+          BRANCH="${GITHUB_REF##*/}"
+          if [[ "$BRANCH" == alpha* ]]; then
+            echo "preid=alpha" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" == beta* ]]; then
+            echo "preid=beta" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Bump prerelease version
+        id: version
+        run: |
+          PREID="${{ steps.tag.outputs.preid }}"
+          NEW_VERSION=$(npm version prerelease --preid=$PREID --no-git-tag-version)
+          echo "new=$NEW_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Publish prerelease
+        run: npm publish --tag ${{ steps.tag.outputs.preid }} --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Commit version bump
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ci: prerelease ${{ steps.version.outputs.new }}"
