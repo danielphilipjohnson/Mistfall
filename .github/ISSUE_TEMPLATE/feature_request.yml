@@ -1,0 +1,22 @@
+name: Feature Request
+description: Request a new feature or rule enhancement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe how the plugin should behave
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example input/output
+      render: text
