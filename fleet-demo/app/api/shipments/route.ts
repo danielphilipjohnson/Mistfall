@@ -6,8 +6,8 @@ import {
   toShipmentFilters,
 } from "@/lib/filter-state";
 
-export function GET(request: NextRequest) {
-  const data = buildFleetData();
+export async function GET(request: NextRequest) {
+  const data = await buildFleetData();
   const filterState = parseFilterStateFromSearchParams(request.nextUrl.searchParams);
   const shipments = getShipmentsWithJoins(data, toShipmentFilters(filterState));
 

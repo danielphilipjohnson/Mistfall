@@ -6,8 +6,8 @@ import {
   summarizeFleet,
 } from "@/lib/fleet-data";
 
-export function GET() {
-  const data = buildFleetData();
+export async function GET() {
+  const data = await buildFleetData();
 
   return Response.json({
     summary: summarizeFleet(data),
