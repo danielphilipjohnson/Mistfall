@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+dist/
+build/
+.env
+.env.local
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.pnpm-store/
+
+# Astro
+.astro/
+.output/
+
+# Logs
+logs/
+*.log
+pnpm-lock.yaml
+
+# IDEs and other
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.Trashes
+ehthumbs.db
+Thumbs.db
