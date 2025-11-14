@@ -1,4 +1,4 @@
-import { schema, table, t, type InferSelect } from "mistfall";
+import { schema, table, t, type InferSelect } from "../../../src";
 
 const vehicleTypes = ["Reefer", "Dry Van", "Flatbed"] as const;
 const statusValues = ["Scheduled", "In Transit", "Delivered", "Delayed"] as const;

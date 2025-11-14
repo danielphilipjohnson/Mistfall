@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import { connect, type DatabaseClient } from "mistfall";
+import { connect, type DatabaseClient } from "../../../src";
 
 import {
   carriers,
