@@ -1,7 +1,7 @@
 {
-  "name": "indexedb-drizzle",
+  "name": "mistfall",
   "version": "0.0.1",
-  "description": "IndexedDB runtime + schema DSL inspired by Drizzle ORM",
+  "description": "Type-safe schema builder and CRUD runtime for IndexedDB + in-memory adapters",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
