@@ -10,7 +10,7 @@ import type {
 } from "@/lib/fleet-schema";
 import { loadFleetDataset } from "@/lib/fleet-db";
 
-export type ShipmentFilters = {
+export type  ShipmentFilters = {
   statuses?: Shipment["status"][];
   regions?: string[];
   priorities?: Shipment["priority"][];
