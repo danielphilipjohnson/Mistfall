@@ -12,10 +12,17 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -w -p tsconfig.json",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "npm run build && changeset publish"
   },
   "keywords": [
     "indexeddb",
@@ -25,7 +32,20 @@
   ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielphilipjohnson/mistfall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielphilipjohnson/mistfall/issues"
+  },
+  "homepage": "https://github.com/danielphilipjohnson/mistfall#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
+    "@changesets/cli": "^2.29.7",
     "@types/node": "^22.8.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"

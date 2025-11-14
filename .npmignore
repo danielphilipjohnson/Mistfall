@@ -1,0 +1,24 @@
+# Source, tests, and examples
+/src
+/tests
+/demo
+/docs
+/cli
+
+# Config files
+.github/
+.vscode/
+.idea/
+tsconfig.json
+astro.config.mjs
+eslint.config.mjs
+next.config.ts
+postcss.config.mjs
+
+# Git
+.git/
+.gitignore
+
+# Other
+*.md
+!README.md
