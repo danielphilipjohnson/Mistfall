@@ -1,3 +1,8 @@
+---
+description: "This end-to-end guide walks through every feature exposed to users: schema DSL, runtime CRUD, predicates, transactions, pagination, adapters, and Astro integration. By the end you will have a working Todo dashboard plus pointers for expanding into ecommerce-style flows."
+title: "Full Tutorial: Build a Browser-Native Todo Dashboard with the IndexedDB DSL"
+---
+
 # Full Tutorial: Build a Browser-Native Todo Dashboard with the IndexedDB DSL
 
 This end-to-end guide walks through every feature exposed to users: schema DSL, runtime CRUD, predicates, transactions, pagination, adapters, and Astro integration. By the end you will have a working Todo dashboard plus pointers for expanding into ecommerce-style flows.
@@ -9,8 +14,8 @@ This end-to-end guide walks through every feature exposed to users: schema DSL, 
 
 ```
 # inside your Astro project
-git clone <repo> indexedb-drizzle
-cd indexedb-drizzle/specs
+git clone <repo> mistfall
+cd mistfall/specs
 npm install
 npm run build
 ```
@@ -65,8 +70,8 @@ export async function seedTodoData(client: DatabaseClient<typeof todoSchema>) {
 In your Astro project create `src/lib/db/schema.ts`:
 
 ```ts
-import { connect } from 'indexedb-drizzle';
-import { todoSchema, seedTodoData, todos, users } from 'indexedb-drizzle/dist/examples/todo.js';
+import { connect } from 'mistfall';
+import { todoSchema, seedTodoData, todos, users } from 'mistfall/dist/examples/todo.js';
 
 export async function getClient() {
   const client = await connect(todoSchema); // IndexedDB in browser, memory on SSR

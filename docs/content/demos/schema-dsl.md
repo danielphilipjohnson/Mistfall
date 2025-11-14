@@ -1,8 +1,3 @@
----
-description: "This demo shows how to declare tables, columns, modifiers, and indexes using the Drizzle-like builders."
-title: Schema DSL Demo
----
-
 # Schema DSL Demo
 
 This demo shows how to declare tables, columns, modifiers, and indexes using the Drizzle-like builders.
@@ -13,7 +8,7 @@ This demo shows how to declare tables, columns, modifiers, and indexes using the
 
 ## Key Concepts
 ```ts
-import { table, t, index, uniqueIndex } from 'indexedb-drizzle/builders';
+import { table, t, index, uniqueIndex } from 'mistfall/builders';
 
 export const users = table(
   'users',

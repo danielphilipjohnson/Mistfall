@@ -3,7 +3,7 @@
 This tutorial dives into every field/modifier available when declaring tables and columns with the DSL. Use it as a reference when designing schemas beyond the Todo/Ecommerce examples.
 
 ## Column Builders
-`import { t } from 'indexedb-drizzle';`
+`import { t } from 'mistfall';`
 
 | Builder | Description |
 | --- | --- |

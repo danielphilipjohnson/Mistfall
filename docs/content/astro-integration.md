@@ -2,7 +2,7 @@
 
 ## Linking the Package
 1. `npm install ../specs` (or the published package) inside your Astro project.
-2. If consuming local source during development, import via relative paths (`../../src/index`) so hot reload sees changes. For production/published builds, use the package entry (`indexedb-drizzle`).
+2. If consuming local source during development, import via relative paths (`../../src/index`) so hot reload sees changes. For production/published builds, use the package entry (`mistfall`).
 
 ## Client vs SSR
 - Schema DSL + runtime are SSR-safe: you can import them from page/server files without crashing.
@@ -12,8 +12,8 @@
 ## Typical Setup
 1. **Shared helper** (`src/lib/db/schema.ts`):
    ```ts
-   import { connect } from 'indexedb-drizzle';
-   import { todoSchema, seedTodoData, todos, users } from 'indexedb-drizzle/examples/todo';
+   import { connect } from 'mistfall';
+   import { todoSchema, seedTodoData, todos, users } from 'mistfall/examples/todo';
 
    export async function getClient() {
      const client = await connect(todoSchema);
