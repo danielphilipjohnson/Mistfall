@@ -1,4 +1,4 @@
-import { connect, pred } from '../../../../src/index';
+import { connect, pred } from '../../../../../src/index';
 import { todoSchema, todos, users, seedTodoData, reassignTodos } from './todo.ts';
 
 export async function runDemoQueries() {

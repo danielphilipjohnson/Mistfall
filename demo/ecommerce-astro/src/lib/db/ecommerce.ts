@@ -1,5 +1,5 @@
-import { connect, pred } from '../../../../src/index';
-import type { QueryOptions } from '../../../../src/index';
+import { connect, pred } from '../../../../../src/index';
+import type { QueryOptions } from '../../../../../src/index';
 import { ecommerceSchema, products, seedEcommerceData } from '../../examples/ecommerce';
 import type { Product } from '../../examples/ecommerce';
 

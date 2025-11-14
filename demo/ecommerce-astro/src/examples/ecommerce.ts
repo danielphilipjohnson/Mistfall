@@ -1,6 +1,6 @@
-import { schema, table, t, index } from '../../../src/builders';
-import type { DatabaseClient } from '../../../src/runtime';
-import type { InferSelect } from '../../../src/ast';
+import { schema, table, t, index } from '../../../../src/builders';
+import type { DatabaseClient } from '../../../../src/runtime';
+import type { InferSelect } from '../../../../src/ast';
  
 const fields = {
   id: t.int().primaryKey().identity(),

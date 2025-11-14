@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import { connect, type DatabaseClient } from "indexedb-drizzle";
+import { connect, type DatabaseClient } from "mistfall";
 
 import {
   carriers,

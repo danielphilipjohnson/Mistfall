@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { connect } from "indexedb-drizzle";
+import { connect } from '../../../../src/';
 
 import { fleetSchema } from "@/lib/fleet-schema";
 import { ensureFleetSeeded, readFleetDataset } from "@/lib/fleet-db";
@@ -70,7 +70,7 @@ export default function ClientSandboxPage() {
           <h1 className="text-3xl font-semibold text-slate-900">Client IndexedDB explorer</h1>
           <p className="text-sm text-slate-500">
             The same deterministic fleet graph, but hydrated entirely inside the browser using your
-            <code className="mx-1 rounded bg-slate-100 px-1.5 py-0.5 text-xs">indexedb-drizzle</code>
+            <code className="mx-1 rounded bg-slate-100 px-1.5 py-0.5 text-xs">mistfall</code>
             runtime. Use DevTools → Application → IndexedDB to inspect the tables as this page connects,
             seeds, and runs joins locally.
           </p>
