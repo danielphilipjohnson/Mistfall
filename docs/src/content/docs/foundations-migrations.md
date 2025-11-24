@@ -3,8 +3,6 @@ description: "While the DSL/runtime focuses on additive, forward-only schema cha
 title: Migrations & Schema Versioning
 ---
 
-# Migrations & Schema Versioning
-
 While the DSL/runtime focuses on additive, forward-only schema changes, you can manage IndexedDB migrations today by bumping schema versions and optionally running custom upgrade steps. This guide explains how.
 
 ## 1. Versioned Schemas

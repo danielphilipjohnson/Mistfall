@@ -3,8 +3,6 @@ title: Why Mistfall
 description: IndexedDB without the footguns—learn the pain points we solve and how the framework improves developer and user experiences.
 ---
 
-# Why Mistfall
-
 IndexedDB is the only persistent database built into every browser, yet the raw API is verbose, untyped, and difficult to evolve. Mistfall wraps it in a Drizzle-inspired schema DSL, a typed runtime, and a docs-first demo suite so you can ship offline-friendly features without fighting the platform.
 
 ## Pain points we address

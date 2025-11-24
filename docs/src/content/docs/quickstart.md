@@ -3,8 +3,6 @@ title: Mistfall Quickstart
 description: Copy-paste setup for installing Mistfall, declaring a schema, wiring `getClient()`, and performing CRUD.
 ---
 
-# Mistfall Quickstart
-
 Follow these steps to go from empty Astro app to querying IndexedDB with Mistfall in under five minutes.
 
 ## 1. Install

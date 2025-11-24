@@ -3,8 +3,6 @@ title: Getting Started
 description: Install Mistfall, explore the repo layout, and run the demos locally in minutes.
 ---
 
-# Getting Started
-
 Whether you want to try the Mistfall framework in an existing Astro app or explore the bundled demos, this quickstart walks through installation, wiring, and local development.
 
 ## 1. Install the Mistfall package

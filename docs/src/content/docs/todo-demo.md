@@ -3,8 +3,6 @@ title: Todo Demo
 description: Overview of the todo schema, CRUD helpers, and the Astro UI components that showcase transactions and predicates.
 ---
 
-# Todo Demo
-
 ## Files
 - `src/examples/todo.ts` — source package example (schema + seeding + transaction helper).
 - `zapping-zero/src/lib/db/todo.ts` — Astro copy of the same schema (importing from package source during development).

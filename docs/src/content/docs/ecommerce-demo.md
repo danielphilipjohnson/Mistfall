@@ -3,8 +3,6 @@ title: Ecommerce Demo
 description: Deep dive into Mistfall’s ecommerce sample—schema design, checkout transaction, pagination UI, and extension ideas.
 ---
 
-# Ecommerce Demo
-
 The ecommerce sample illustrates a multi-table Mistfall app: catalog browsing, cart checkout, and basic analytics. Use it as a blueprint for any storefront or inventory-heavy feature set.
 
 ## Where everything lives

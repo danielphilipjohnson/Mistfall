@@ -3,8 +3,6 @@ title: Astro Integration Guide
 description: Step-by-step instructions for installing Mistfall in an Astro app, wiring schemas, islands, adapters, and tests.
 ---
 
-# Astro Integration Guide
-
 This guide assumes you have an Astro project (plain Astro or Astro + React/Svelte). You will:
 
 1. Install/use the Mistfall package.

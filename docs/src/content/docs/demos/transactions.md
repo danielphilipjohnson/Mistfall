@@ -2,9 +2,6 @@
 description: "Two demos show multi-store atomic work."
 title: Transactions Demo
 ---
-
-# Transactions Demo
-
 Two demos show multi-store atomic work.
 
 ## 1. Todo Reassignment (`src/examples/todo.ts` & `zapping-zero/src/lib/db/demoQueries.ts`)
