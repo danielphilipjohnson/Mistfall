@@ -1,6 +1,6 @@
 {
   "name": "mistfall",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Type-safe schema builder and CRUD runtime for IndexedDB + in-memory adapters",
   "type": "module",
   "main": "dist/index.js",
