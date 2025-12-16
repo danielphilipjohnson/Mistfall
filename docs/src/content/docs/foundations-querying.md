@@ -3,8 +3,6 @@ title: Querying Data
 description: Learn how to filter, sort, paginate, and project data with Mistfall’s runtime and predicate helpers.
 ---
 
-# Querying Data
-
 Mistfall’s runtime ships with a typed `select` API and composable predicates. This guide covers everything from simple filters to cursor-style pagination so you can read data efficiently in Astro islands or tests.
 
 ## Reading rows

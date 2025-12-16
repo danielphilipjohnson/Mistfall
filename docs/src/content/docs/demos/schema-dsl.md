@@ -3,8 +3,6 @@ description: "This demo shows how to declare tables, columns, modifiers, and ind
 title: Schema DSL Demo
 ---
 
-# Schema DSL Demo
-
 This demo shows how to declare tables, columns, modifiers, and indexes using the Drizzle-like builders.
 
 ## Files Involved

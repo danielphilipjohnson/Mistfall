@@ -3,8 +3,6 @@ title: Connecting to Mistfall
 description: How to instantiate the Mistfall database client, pick adapters, and seed data across SSR and browser environments.
 ---
 
-# Connecting to Mistfall
-
 Once your schema is defined you need a single place to create the client, pick adapters, and seed data. Use this guide alongside [Working with Schema](/working-with-schema/) to keep runtime wiring consistent across apps, demos, and tests.
 
 ## Build the schema once

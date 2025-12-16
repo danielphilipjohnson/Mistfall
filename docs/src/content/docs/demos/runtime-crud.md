@@ -3,8 +3,6 @@ description: "Demonstrates `connect`, `insert`, `select`, `update`, and `delete`
 title: Runtime CRUD Demo
 ---
 
-# Runtime CRUD Demo
-
 Demonstrates `connect`, `insert`, `select`, `update`, and `delete` using the Todo schema.
 
 ## Reference File

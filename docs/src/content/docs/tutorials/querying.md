@@ -3,8 +3,6 @@ description: "This document enumerates every way to query data with the runtime:
 title: "Querying Guide: Filters, Ordering, Pagination, and Predicates"
 ---
 
-# Querying Guide: Filters, Ordering, Pagination, and Predicates
-
 This document enumerates every way to query data with the runtime: `select` options, predicate helpers, ordering, pagination, and mutation predicates for `update`/`delete`.
 
 ## QueryOptions Overview

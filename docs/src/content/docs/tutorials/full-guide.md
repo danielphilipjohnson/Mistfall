@@ -3,8 +3,6 @@ description: "This end-to-end guide walks through every feature exposed to users
 title: "Full Tutorial: Build a Browser-Native Todo Dashboard with the IndexedDB DSL"
 ---
 
-# Full Tutorial: Build a Browser-Native Todo Dashboard with the IndexedDB DSL
-
 This end-to-end guide walks through every feature exposed to users: schema DSL, runtime CRUD, predicates, transactions, pagination, adapters, and Astro integration. By the end you will have a working Todo dashboard plus pointers for expanding into ecommerce-style flows.
 
 ## Prerequisites

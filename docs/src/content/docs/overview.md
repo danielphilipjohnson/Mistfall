@@ -3,8 +3,6 @@ title: Overview
 description: High-level goals, architecture layers, adapters, and example entry points for the Mistfall IndexedDB toolkit.
 ---
 
-# Overview
-
 ## Goals
 - Drizzle-style schema DSL: strongly typed `table()` + `t.*` column builders that emit a schema AST.
 - Runtime compilation to IndexedDB stores + sequences + metadata with SSR-safe fallbacks.

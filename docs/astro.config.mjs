@@ -4,8 +4,14 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://danielphilipjohnson.github.io/Mistfall',
+	base: '/Mistfall/',
+	trailingSlash: 'always',
 	integrations: [
 		starlight({
+			editLink: {
+				baseUrl: 'https://danielphilipjohnson.github.io/Mistfall/',
+			},
 			title: 'Mistfall Demo Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [

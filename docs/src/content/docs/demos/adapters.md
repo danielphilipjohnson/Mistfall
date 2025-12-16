@@ -3,7 +3,6 @@ title: Adapter Demo (IndexedDB vs Memory)
 description: Compare the runtime behavior of the IndexedDB and memory adapters plus tips for swapping them in Astro demos.
 ---
 
-
 ## Why Adapters?
 - **IndexedDB**: persistent, async storage available in browsers.
 - **Memory**: deterministic, process-local storage for SSR/tests/Node scripts.

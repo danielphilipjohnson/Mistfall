@@ -3,8 +3,6 @@ title: Integrations
 description: Entry point for framework integrations that pair Mistfall with Astro and future adapters.
 ---
 
-# Integrations
-
 Mistfall plugs into multiple environments. Start with Astro today and expect more framework guides here soon.
 
 - [Astro Integration](/integrations/astro/)
