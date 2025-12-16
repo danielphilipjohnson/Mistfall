@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://danielphilipjohnson.github.io',
+	site: 'https://danielphilipjohnson.github.io/Mistfall',
 	base: '/Mistfall/',
 	trailingSlash: 'always',
 	integrations: [
