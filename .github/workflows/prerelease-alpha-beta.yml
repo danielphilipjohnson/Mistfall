@@ -40,6 +40,8 @@ jobs:
 
       - name: Bump prerelease version
         id: version
+        env:
+          npm_config_ignore_scripts: true
         run: |
           PREID="${{ steps.tag.outputs.preid }}"
           NEW_VERSION=$(npm version prerelease --preid=$PREID --no-git-tag-version)
